@@ -1,0 +1,26 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Double Dolar, Conversao;
+            int Qte;
+
+            Console.WriteLine(" Insira o valor do dolar:");
+            Dolar = double.Parse(Console.ReadLine());
+            Console.WriteLine(" Insira a quantidade de Dolar");
+            Qte = int.Parse(Console.ReadLine());
+            Conversao = Qte * Dolar;
+
+            Console.WriteLine(" Total em reais R$: "+ Conversao);
+
+            if( Conversao> 8000)
+            {
+                Console.WriteLine(" Parabéns, voçê tem bastante grana");
+            }
+
+            else
+            {
+                Console.WriteLine(" Junte mais grana");
+            }
+
+            Console.ReadLine();
